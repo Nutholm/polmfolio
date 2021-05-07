@@ -44,5 +44,13 @@ export default {
     map-get($Colorscheme, Secondary),
     map-get($Colorscheme, Tertiary)
   );
+  @media (min-width: 1000px) {
+   background: linear-gradient(
+    map-get($Colorscheme, Quaternary) 6%,
+    map-get($Colorscheme, Primary),
+    map-get($Colorscheme, Secondary),
+    map-get($Colorscheme, Tertiary)
+  );
+  }
 }
 </style>

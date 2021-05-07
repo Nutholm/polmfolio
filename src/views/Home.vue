@@ -333,6 +333,15 @@ h2 {
 }
 .AboutText {
   padding: 0 20px;
+  background: linear-gradient(rgba(255, 255, 255, 0.397), rgba(0, 0, 0, 0));
+  border-radius: 10px;
+  @media (min-width: 1000px) {
+    background: linear-gradient(rgba(255, 255, 255, 0.397), rgba(0, 0, 0, 0));
+    border: 10px;
+    margin: 0 75px;
+    font-weight: 500;
+  }
+  
 }
 
 .flex {
