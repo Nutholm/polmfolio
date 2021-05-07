@@ -45,7 +45,21 @@
           <div>
             <h1>Welcome to my portfolio</h1>
             <p>
-              Spild af tid og pis mig i øret hvor lidt jeg gider at stå op til
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              pharetra vestibulum dictum. Donec feugiat scelerisque turpis, ac
+              fringilla magna semper eu. Nullam ornare tellus ac tincidunt
+              suscipit. Curabitur molestie est id justo rutrum, nec luctus elit
+              suscipit. Etiam auctor urna quis scelerisque posuere. Donec
+              bibendum sem non nibh viverra, vitae imperdiet ipsum semper. Proin
+              suscipit augue purus, in elementum arcu fermentum convallis.
+              Pellentesque in nisi vitae risus condimentum ullamcorper. Duis
+              posuere magna eu enim cursus, non finibus urna molestie. Donec
+              tempor augue ac sollicitudin semper. Pellentesque eu justo id nisl
+              blandit condimentum. Praesent congue arcu sed nunc vehicula
+              ullamcorper. Pellentesque enim metus, rutrum in volutpat a,
+              gravida quis velit. In hac habitasse platea dictumst. Vivamus
+              neque sapien, semper in dictum non, semper nec ipsum.
+              <!-- Spild af tid og pis mig i øret hvor lidt jeg gider at stå op til
               en så ligegyldig hverdag som er fucking kodning. Personer der
               føler kodning er vejen frem i livet har besynderligt lidt indhold
               i deres ellers så sprægfyldte hverdag. Folk der elsker kodning
@@ -58,14 +72,16 @@
               billeder og tekster som jeg inkludere. NU hvor du har fået en
               introduktion til hvem jeg er, så fuck jer, fuck jeres opgaver og
               fuck hele det "curriculum" som i ikke laver andet end at følge
-              blind som fucking aber.
+              blind som fucking aber. -->
             </p>
           </div>
         </div>
       </div>
       <hr class="hr proj" />
       <div class="Projects"><h2>Projects</h2></div>
-                      <p style="margin-top: 70px; margin-bottom: -30px;">My Artworks presented in a humble slideshow...</p>
+      <p style="margin-top: 70px; margin-bottom: -30px">
+        My Artworks presented in a humble slideshow...
+      </p>
 
       <div id="Projects">
         <v-carousel id="slideshow">
@@ -83,7 +99,9 @@
       <img src="../assets/MuseumLogo.png" alt="" />
       <img src="../assets/Shapes.png" alt="" /> -->
       </div>
-      <p style="margin-bottom: 20px">Right click and open in a new tab, should you want to examine further...</p>
+      <p style="margin-bottom: 20px">
+        Right click and open in a new tab, should you want to examine further...
+      </p>
 
       <div class="gridbox">
         <div class="item">
@@ -341,7 +359,6 @@ h2 {
     margin: 0 75px;
     font-weight: 500;
   }
-  
 }
 
 .flex {
