@@ -459,7 +459,10 @@ h2 {
 .gridbox {
   display: grid;
   @media (min-width: 900px) {
-    padding: 20px 300px;
+    padding: 20px 120px;
+  }
+  @media (min-width: 1200px) {
+    padding: 20px 250px;
   }
   grid-template-columns: auto auto auto auto;
   height: auto;
