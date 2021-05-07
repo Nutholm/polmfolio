@@ -6,7 +6,9 @@
           <div class="headerbutton" @click="smoothScroll('.homepage')">
             Home
           </div>
-          <div class="headerbutton" @click="smoothScroll('.about')">About</div>
+          <div class="headerbutton" @click="smoothScroll('.about')">
+            About
+          </div>
         </div>
 
         <div>
@@ -22,18 +24,7 @@
       </div>
     </div>
     <div id="home">
-      <hr class="hr" />
-      <h3 style="color: white; margin: 15px 0">
-        Come on then, take a sit. We can watch life pass on by...
-      </h3>
-      <div id="gif">
-        <img
-          height="500"
-          width="500"
-          src="https://media1.tenor.com/images/c805c00fc361edd711942c81cb8ce39e/tenor.gif"
-          alt=""
-        />
-      </div>
+      <div></div>
       <hr class="hr about" />
       <div id="about"><h2>About</h2></div>
       <div class="flex" id="About">
@@ -65,8 +56,6 @@
       </div>
       <hr class="hr proj" />
       <div class="Projects"><h2>Projects</h2></div>
-                      <p style="margin-top: 70px; margin-bottom: -30px;">My Artworks presented in a humble slideshow...</p>
-
       <div id="Projects">
         <v-carousel id="slideshow">
           <v-carousel-item
@@ -83,8 +72,6 @@
       <img src="../assets/MuseumLogo.png" alt="" />
       <img src="../assets/Shapes.png" alt="" /> -->
       </div>
-      <p style="margin-bottom: 20px">Right click and open in a new tab, should you want to examine further...</p>
-
       <div class="gridbox">
         <div class="item">
           <img
@@ -159,8 +146,6 @@
             allowfullscreen
           ></iframe>
         </div>
-        <h3 style="margin-top: -30px; margin-bottom: 20px">Video CV</h3>
-        <p style="margin-bottom: 130px">This project was about...</p>
 
         <div class="Video2">
           <iframe
@@ -173,26 +158,11 @@
             allowfullscreen
           ></iframe>
         </div>
-        <h3 style="margin-top: -30px; margin-bottom: 20px">Promo Commercial</h3>
-        <p style="margin-bottom: 130px">This project was about...</p>
-
-        <div class="Video3">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/FmBXdCh3oWw"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <h3 style="margin-top: -30px; margin-bottom: 20px">Short Movie</h3>
-        <p style="margin-bottom: 130px">This project was about...</p>
       </div>
     </div>
   </div>
 </template>
+
 <script>
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -292,30 +262,12 @@ export default {
     }
   }
 }
-#gif {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  width: 400px;
-  height: 400px;
-  border-radius: 20% 80% 20% 80% / 80% 20% 80% 20%;
-  border: 2px solid black;
-}
-.item {
-  border: 2px solid black;
-}
-h2 {
-  font-size: 50px;
-  color: white;
-  -webkit-text-stroke: 3px solid black;
-  font-family: "Goblin One", cursive;
-}
+
 #home {
   margin-top: 180px;
 }
 #about {
-  margin: 200px auto 40px auto;
+    margin: 200px auto 40px auto;
 }
 #About {
   margin: 40px auto;
@@ -324,11 +276,8 @@ h2 {
     border: 2px solid black;
     border-radius: 5px;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 500px) {
     flex-direction: column;
-  }
-  @media (min-width: 1200px) {
-    padding: 20px 200px;
   }
 }
 .AboutText {
@@ -367,20 +316,6 @@ h2 {
   top: 0;
   width: 100%;
 }
-.Video3 {
-  overflow: hidden;
-  /* 16:9 aspect ratio */
-  padding-top: 56.25%;
-  position: relative;
-}
-.Video3 iframe {
-  border: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
 
 .Projects {
   margin: 200px auto 40px auto;
@@ -393,12 +328,7 @@ h2 {
 #Projects {
   max-height: 700px;
   padding: 20px 30px;
-  @media (min-width: 900px) {
-    padding: 20px 120px;
-  }
-  @media (min-width: 1200px) {
-    padding: 20px 250px;
-  }
+
   #slideshow {
     margin: 40px auto;
     border-radius: 27% 87% 13% 80% / 77% 24% 99% 17%;
@@ -407,34 +337,15 @@ h2 {
 }
 .Cinema {
   margin: 200px auto 40px auto;
-  @media (min-width: 900px) {
-    padding: 20px 120px;
-  }
-  @media (min-width: 1200px) {
-    padding: 20px 250px;
-  }
 }
-.Video1 {
-  margin: 40px 30px;
-  border-radius: 27% 87% 13% 80% / 27% 24% 19% 27%;
-  border: 2px solid black;
-}
+.Video1,
 .Video2 {
   margin: 40px 30px;
-  border-radius: 77% 17% 57% 9% / 14% 49% 13% 90%;
-  border: 2px solid black;
-}
-.Video3 {
-  margin: 40px 30px;
   border-radius: 77% 24% 99% 17% / 27% 87% 13% 80%;
-  border: 2px solid black;
 }
 
 .gridbox {
   display: grid;
-  @media (min-width: 900px) {
-    padding: 20px 300px;
-  }
   grid-template-columns: auto auto auto auto;
   height: auto;
   margin: 1rem 4rem 1rem 4rem;
@@ -443,30 +354,6 @@ h2 {
   .item {
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
       rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-  }
-  .item:nth-child(1) {
-    animation: appear 0.3s ease-out;
-  }
-  .item:nth-child(2) {
-    animation: appear 0.5s ease-out;
-  }
-  .item:nth-child(3) {
-    animation: appear 0.7s ease-out;
-  }
-  .item:nth-child(4) {
-    animation: appear 0.9s ease-out;
-  }
-  .item:nth-child(5) {
-    animation: appear 1.1s ease-out;
-  }
-  .item:nth-child(6) {
-    animation: appear 1.3s ease-out;
-  }
-  .item:nth-child(7) {
-    animation: appear 1.5s ease-out;
-  }
-  .item:nth-child(8) {
-    animation: appear 1.7s ease-out;
   }
 }
 </style>

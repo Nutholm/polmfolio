@@ -1,16 +1,11 @@
 <template>
-  
   <v-app>
     <div id="app">
-    <myHeader id="myHeader"></myHeader>
-    <myContent id="myContent"></myContent>
-    <myFooter id="myFooter"></myFooter>
-  </div>
+      <myHeader id="myHeader"></myHeader>
+      <myContent id="myContent"></myContent>
+      <myFooter id="myFooter"></myFooter>
+    </div>
   </v-app>
-
-  
-  
-  
 </template>
 
 <script>
@@ -19,12 +14,12 @@ import Content from "./components/Content";
 import Footer from "./components/Footer";
 
 export default {
-  name: 'App',
+  name: "App",
 
   data: () => ({
     //
   }),
-   components: {
+  components: {
     myHeader: Header,
     myContent: Content,
     myFooter: Footer,
@@ -35,13 +30,19 @@ export default {
 
 <style lang="scss">
 @import "./src/styles/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  // background-color: map-get($Colorscheme, Primary);
-  color: black
+  background: linear-gradient(
+    map-get($Colorscheme, Quaternary) 10%,
+    map-get($Colorscheme, Quaternary) 12%,
+    map-get($Colorscheme, Primary),
+    map-get($Colorscheme, Secondary),
+    map-get($Colorscheme, Tertiary)
+  );
 }
-
 </style>

@@ -2,7 +2,7 @@ $Colorscheme: (
     Primary: #b80000,
     Secondary: #ae4a42,
     Tertiary: #642e73,
-    Quaternary: #79a03d,
+    Quaternary: #000000,
 );
 
 .hr {
@@ -10,4 +10,16 @@ $Colorscheme: (
     color: black;
     width: 80%;
     margin: 50px auto 0 auto;
+}
+
+.headerbutton {
+    font-size: 30px;
+    cursor: pointer;
+    &:hover {
+        color: map-get($Colorscheme, Quaternary);
+        border-radius: 15px;
+        padding: 5px;
+        margin-bottom: 5px;
+        background: linear-gradient(map-get($Colorscheme, Secondary), rgba(255, 255, 255, 0));
+    }
 }
